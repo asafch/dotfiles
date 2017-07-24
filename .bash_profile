@@ -26,8 +26,9 @@ for option in autocd globstar; do
 done;
 
 # Add tab completion for many Bash commands
-if which brew &> /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_completion" ]; then
-	source "$(brew --prefix)/share/bash-completion/bash_completion";
+# $(brew --prefix)
+if which brew &> /dev/null && [ -f "/usr/local/share/bash-completion/bash_completion" ]; then
+	source "/usr/local/share/bash-completion/bash_completion";
 elif [ -f /etc/bash_completion ]; then
 	source /etc/bash_completion;
 fi;
@@ -48,9 +49,9 @@ complete -W "NSGlobalDomain" defaults;
 # complete -o "nospace" -W "Contacts Calendar Dock Finder Mail Safari iTunes SystemUIServer Terminal Twitter" killall;
 
 # enable Homebrew package 'bash-completion' to function
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-	. $(brew --prefix)/etc/bash_completion
+if [ -f /usr/local/etc/bash_completion ]; then
+	. /usr/local/etc/bash_completion
 fi
 
-# Launch ssh-agent so all the SSH keys stored in your Keychain will be loaded
-eval `ssh-agent -s` > /dev/null 2> /dev/null
+# OPAM configuration
+. /Users/asaf/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
