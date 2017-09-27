@@ -10,6 +10,7 @@ alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/programming"
 alias h="history"
+alias hh="h | grep"
 
 # if using GNU `ls`
 colorflag="--color"
