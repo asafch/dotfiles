@@ -34,6 +34,7 @@ alias ls="command ls ${colorflag}"
 # Always enable colored `grep` output
 # Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
 alias grep='grep --color=auto'
+alias grepr='grep --color=auto -r'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 
