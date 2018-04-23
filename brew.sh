@@ -5,9 +5,6 @@
 # Make sure we’re using the latest Homebrew.
 brew update
 
-# Upgrade any already-installed formulae.
-brew upgrade --all
-
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew install coreutils
@@ -23,7 +20,6 @@ brew install gnu-sed --with-default-names
 # Note: don’t forget to add `/usr/local/bin/bash` to `/etc/shells` before
 # running `chsh`.
 brew install bash
-brew tap homebrew/versions
 brew install bash-completion2
 
 # Switch to using brew-installed bash as default shell
@@ -109,6 +105,7 @@ brew install opam # for OCaml
 brew install mono # for F#
 brew install scala
 brew install sbt # Scala Build Tool
+brew install mongodb@3.4
 
 # Add all kinds of fancy tab auto-completions to bash
 brew install bash-completion
