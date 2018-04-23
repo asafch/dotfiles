@@ -109,7 +109,6 @@ brew install mongodb@3.4
 
 # Add all kinds of fancy tab auto-completions to bash
 brew install bash-completion
-brew tap homebrew/completions
 brew install apm-bash-completion
 brew install gem-completion
 brew install grunt-completion
