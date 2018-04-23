@@ -29,6 +29,16 @@ export LESS_TERMCAP_md="${yellow}";
 # Don’t clear the screen after quitting a manual page. This prevents downward scrolling with the trackpad.
 # export MANPAGER='less -X';
 
-# If you're using GNU coreutils over BSD
-export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}";
-export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:${MANPATH}";
+# Support rabbitmq
+export PATH=$PATH:/usr/local/sbin
+
+# Support Hadoop
+# export JAVA_HOME=$(/usr/libexec/java_home)
+# export HADOOP_HOME="/Users/asaf/programming/jars/hadoop-2.7.3"
+# export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+# export HADOOP_COMMON_LIB_NATIVE_DIR=$HADOOP_HOME/lib/native
+# export HADOOP_OPTS=-Djava.library.path=$HADOOP_HOME/lib/native
+# export PATH=$JAVA_HOME/bin:$PATH
+# export PATH=$HADOOP_HOME/bin:$PATH
+# export HADOOP_CLASSPATH=${JAVA_HOME}/lib/tools.jar
+# export HADOOP_USERNAME="asaf"

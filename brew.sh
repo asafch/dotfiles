@@ -106,6 +106,8 @@ brew install mono # for F#
 brew install scala
 brew install sbt # Scala Build Tool
 brew install mongodb@3.4
+brew install redis
+brew install rabbitmq
 
 # Add all kinds of fancy tab auto-completions to bash
 brew install bash-completion

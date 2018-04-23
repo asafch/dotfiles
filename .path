@@ -1,0 +1,8 @@
+# If you're using GNU coreutils over BSD
+export PATH="$(brew --prefix coreutils)/libexec/gnubin:${PATH}";
+export MANPATH="$(brew --prefix coreutils)/libexec/gnuman:${MANPATH}";
+
+
+# If you're using GNU findutils over BSD
+export PATH="$(brew --prefix findutils)/libexec/gnubin:${PATH}";
+export MANPATH="$(brew --prefix findutils)/libexec/gnuman:${MANPATH}";
