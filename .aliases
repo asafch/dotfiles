@@ -143,7 +143,3 @@ alias mergepdf='/System/Library/Automator/Combine\ PDF\ Pages.action/Contents/Re
 
 # Reload the shell (i.e. invoke as a login shell)
 # alias reload="exec $SHELL -l"
-
-# Abbreviate those horrible F# utils
-alias fsi=fsharpi
-alias fsc=fsharpc
