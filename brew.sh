@@ -69,6 +69,7 @@ brew install heroku
 # brew install mongodb
 brew install redis
 # brew install rabbitmq
+brew install tree
 
 # Add all kinds of fancy tab auto-completions to bash
 # brew install bash-completion
